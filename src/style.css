@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -5,8 +6,32 @@
     --color-purple-500: #584d62;
     --color-purple-100: #fcf8ff;
     --color-green-workit: #44ffa1;
+    --font-fraunces: 'Fraunces', serif;
+    --font-manrope: 'Manrope', sans-serif;
   }
 
   .social-icon {
    @apply w-5 h-5;
   }
+
+  .features {
+    @apply flex flex-col items-center justify-center mt-16 px-5;
+  }
+
+  .features article {
+    @apply flex flex-col items-center justify-center mb-8;
+  }
+
+  .features article h3 {
+    @apply font-fraunces text-purple-900 text-2xl font-semibold leading-[1.2] mt-6 mb-4;
+  }
+
+  .features article p {
+    @apply font-manrope text-purple-500 text-base font-normal leading-[1.8] text-center;
+  }
+
+  .value-number-circle {
+    @apply border-1 border-purple-900 rounded-full h-12 w-12 flex items-center justify-center font-fraunces text-[20px] leading-10;
+  }
+
+  
