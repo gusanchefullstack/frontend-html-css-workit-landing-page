@@ -13,68 +13,74 @@
     <title>Frontend Mentor | Workit landing page</title>
   </head>
   <body class="bg-purple-100 font-manrope">
-    <header class="bg-purple-900">
+    <header class="bg-purple-900 px-5 pt-8">
       <nav>
-        <ul>
+        <ul class="flex justify-between items-center">
           <li>
             <figure>
               <img src="./assets/images/logo-light.svg" alt="Workit">
             </figure>
           </li>
-          <li class="text-white">
+          <li class="font-bold text-lg leading-[1.8] text-white border-b-2 border-b-green-workit hover:cursor-pointer hover:text-green-workit">
             Apply for access
           </li>
       </nav>
     </header>
-    <main>
-      <section class="bg-purple-900">
-        <h1 class="font-fraunces text-white">Data <span>tailored</span> to your needs.</h1>
-        <button class="bg-green-workit text-purple-900">Learn more</button>
+    <main >
+      <section class="bg-purple-900 flex flex-col items-center justify-center">
+        <h1 class="font-fraunces text-white px-5 font-semibold text-5xl text-center mt-14">Data <span class="underline decoration-green-workit decoration-3">tailored</span> to your needs.</h1>
+        <button class="bg-green-workit font-bold text-base leading-[1.8] text-purple-900 px-8 py-3 mt-10 hover:bg-purple-900 hover:text-green-workit hover:border-green-workit hover:border-2 hover:cursor-pointer">Learn more</button>
         <figure>
-          <img src="./assets/images/image-hero.webp" alt="Hero">
+          <img src="./assets/images/image-hero.webp" alt="Hero" class="px-5 mt-16">
         </figure>
+        <img src="./assets/images/ornamental-mobile.svg" alt="" class="md:hidden">
+        <img src="./assets/images/ornamental-tablet-top.svg" alt="" class="hidden md:block lg:hidden">
+        <img src="./assets/images/ornamental-desktop.svg" alt="" class="hidden lg:block">
       </section>
-      <section id="features">
-        <article>
-          <h2>1</h2>
-          <div>
-            <h3 class="font-fraunces">Actionable insights</h3>
-            <p>Optimize your products, improve customer satisfaction and stay
+      <section id="features" class="bg-purple-100 px-5 py-16">
+        <article class="pb-8">
+          <h2 class="border-1 border-purple-500 rounded-full w-12 h-12 flex items-center justify-center text-purple-900 font-fraunces font-semibold text-xl">1</h2>
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-fraunces font-semibold leading-[1.2] text-purple-900 text-2xl mt-6">Actionable insights</h3>
+            <p class="mt-4">Optimize your products, improve customer satisfaction and stay
               ahead of the competition with our product data analytics.</p>
           </div>
         </article>
-        <article>
-          <h2>2</h2>  
-          <div>
-            <h3 class="font-fraunces">Data-driven decisions</h3>
-            <p>Make data-driven decisions with our product data analytics. Our
+        <article class="pb-8">
+          <h2 class="border-1 border-purple-500 rounded-full w-12 h-12 flex items-center justify-center text-purple-900 font-fraunces font-semibold text-xl">2</h2>  
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-fraunces font-semibold leading-[1.2] text-purple-900 text-2xl mt-6">Data-driven decisions</h3>
+            <p class="mt-4">Make data-driven decisions with our product data analytics. Our
               AI-generated reports help you unlock insights hidden in your product data.</p>
           </div>
         </article>
         <article>
-          <h2>3</h2>
-          <div>
-            <h3 class="font-fraunces">Always affordable</h3>
-            <p>Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
+          <h2 class="border-1 border-purple-500 rounded-full w-12 h-12 flex items-center justify-center text-purple-900 font-fraunces font-semibold text-xl">3</h2>
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-fraunces font-semibold leading-[1.2] text-purple-900 text-2xl mt-6">Always affordable</h3>
+            <p class="mt-4 font-normal text-base">Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
           </div>
         </article>
+        <img src="./assets/images/ornamental-mobile.svg" alt="" class="md:hidden">
+        <img src="./assets/images/ornamental-tablet-bottom.svg" alt="" class="hidden md:block lg:hidden">
+        <img src="./assets/images/ornamental-desktop.svg" alt="" class="hidden lg:block">
       </section>
-      <section>
+      <section class="bg-white">
         <figure>
           <img src="./assets/images/image-founder.webp" alt="Founder">
         </figure> 
-        <article class="bg-purple-900">
-          <h2 class="font-fraunces text-white">Be the first to test</h2>
-          <p class="text-white">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.</p>
-          <button class="bg-green-workit text-purple-900">Apply for access</button>
+        <article class="bg-purple-900 p-8 text-center">
+          <h2 class="font-fraunces text-white font-semibold text-[32px] leading-[1.2]">Be the first to test</h2>
+          <p class="text-white mt-8 font-normal text-base px-[1.5rem]">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.</p>
+          <button class="bg-green-workit font-bold text-base leading-[1.8] text-purple-900 px-8 py-3 mt-10 hover:bg-purple-900 hover:text-green-workit hover:border-green-workit hover:border-2 hover:cursor-pointer">Apply for access</button>
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="flex flex-col items-center justify-center gap-14 py-20">
       <figure>
         <img src="./assets/images/logo-dark.svg" alt="Workit">
       </figure>
-      <ul>
+      <ul class="flex justify-center items-center gap-4">
         <li>
           <a href="#">
             <img src="./assets/images/icon-facebook.svg" alt="Facebook">
